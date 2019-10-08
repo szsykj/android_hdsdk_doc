@@ -1,5 +1,6 @@
+#设备定时模块
 
-#获取设备的所有定时任务
+##获取设备的所有定时任务
 ```java
 /**
 * 获取某个设备的所有定时任务
@@ -10,7 +11,7 @@
 void getDeviceTimingList(int deviceId, ResultCallBack<ArrayList<Timing>> resultCallBack);
 ```
 
-#添加一个定时
+##添加一个定时
 
 ```java
 /**
@@ -31,7 +32,7 @@ void getDeviceTimingList(int deviceId, ResultCallBack<ArrayList<Timing>> resultC
 void addTiming(int deviceId, String name, String repeat, String time, LinkedHashMap<String, String> actions, ResultCallBack resultCallBack);
 ```
 
-#更新设备的定时任务
+##更新设备的定时任务
 
 ```java
 /**
@@ -53,7 +54,7 @@ void addTiming(int deviceId, String name, String repeat, String time, LinkedHash
 void updateTiming(int deviceId, int timingId, String name, String repeat, String time, LinkedHashMap<String, String> actions, ResultCallBack resultCallBack);
 ```
 
-#删除设备的某个定时任务
+##删除设备的某个定时任务
 
 
 ```java
@@ -66,7 +67,7 @@ void updateTiming(int deviceId, int timingId, String name, String repeat, String
 void deleteTiming(int timingId, ResultCallBack resultCallBack);
 ```
 
-#更新设备的某个定时任务开启和关闭状态
+##更新设备的某个定时任务开启和关闭状态
 
 
 ```java
@@ -80,7 +81,7 @@ void deleteTiming(int timingId, ResultCallBack resultCallBack);
 void updateTimingStatus(int timingId, int status, ResultCallBack resultCallBack);
 ```
 
-#监听所有设备的定时任务变化时的回调
+##监听所有设备的定时任务变化时的回调
 
 ```java
 /**
@@ -92,7 +93,7 @@ void addTimingChangeListener(OnTimingChangedListener onTimingChangedListener);
 
 
 
-#OnTimingChangedListener 定时变化的回调接口类
+##OnTimingChangedListener 定时变化的回调接口类
 
 ```java
 /**
@@ -101,6 +102,7 @@ void addTimingChangeListener(OnTimingChangedListener onTimingChangedListener);
 */
 void onTimingChanged(int did, List<Timing> timings);
 ```
+
 
 
 #Timing数据模型

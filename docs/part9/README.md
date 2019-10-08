@@ -1,4 +1,4 @@
-#获取产品列表
+##添加智能
 
 ```java
 /**
@@ -9,7 +9,7 @@
 void addWisdom(WisdomModel model, ResultCallBack<WisdomModel> callBack);
 ```
 
-#删除智能
+##删除智能
 
 ```java
 /**
@@ -20,7 +20,7 @@ void addWisdom(WisdomModel model, ResultCallBack<WisdomModel> callBack);
 void deleteWisdom(int wid, ResultCallBack callBack);
 ```
 
-#获取智能数据集合
+##获取智能数据集合
 
 ```java
 /**
@@ -31,7 +31,7 @@ void getWisdomList(ResultCallBack<List<WisdomModel>> callBack);
 ```
 
 
-#开关智能
+##开关智能
 
 ```java
 /**
@@ -43,7 +43,7 @@ void getWisdomList(ResultCallBack<List<WisdomModel>> callBack);
 void switchWisdom(int wid,boolean onoff,ResultCallBack callBack);
 ```
 
-#修改智能
+##修改智能
 
 ```java
 /**
@@ -54,7 +54,7 @@ void switchWisdom(int wid,boolean onoff,ResultCallBack callBack);
 void updateWisdom(WisdomModel model, ResultCallBack callBack);
 ```
 
-#手动执行智能
+##手动执行智能
 
 ```java
 /**
@@ -64,7 +64,7 @@ void updateWisdom(WisdomModel model, ResultCallBack callBack);
 void executeWisdom(int wid);
 ```
 
-#设置智能状态改变监听
+##设置智能状态改变监听
 
 ```java
 /**
@@ -74,7 +74,7 @@ void executeWisdom(int wid);
 void registerWisdomStatusListener(OnWisdomStatusListener listener);
 ```
 
-#取消智能状态改变监听
+##取消智能状态改变监听
 
 ```java
 /**
@@ -84,7 +84,7 @@ void registerWisdomStatusListener(OnWisdomStatusListener listener);
 void unRegisterWisdomStatusListener(OnWisdomStatusListener listener);
 ```
 
-# WisdomModel数据模型
+## WisdomModel数据模型
 
 | 字段名称            | 类型        | 字段说明                                                                |
 |-----------------|-----------|---------------------------------------------------------------------|

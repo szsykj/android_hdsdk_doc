@@ -134,6 +134,19 @@
                 <a href="2.1.html">
             
                     
+                    用户帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.1.html">
+            
+                <a href="2.1.html">
+            
+                    
                     数据缓存
             
                 </a>
@@ -180,6 +193,19 @@
             
                     
                     WIFI设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/3.3.html">
+            
+                <a href="../part3/3.3.html">
+            
+                    
+                    网关设备配网
             
                 </a>
             
@@ -283,12 +309,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../part11/">
+        <li class="chapter " data-level="1.12" data-path="../part12/sigmesh.html">
             
-                <a href="../part11/">
+                <a href="../part12/sigmesh.html">
             
                     
-                    11.错误码
+                    11.sigmesh
             
                 </a>
             
@@ -296,12 +322,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="../part12/">
+        <li class="chapter " data-level="1.13" data-path="../part11/">
+            
+                <a href="../part11/">
+            
+                    
+                    12.错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../part12/">
             
                 <a href="../part12/">
             
                     
-                    12.更新日志
+                    13.更新日志
             
                 </a>
             
@@ -354,17 +393,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7528;&#x6237;&#x767B;&#x5F55;">&#x7528;&#x6237;&#x767B;&#x5F55;</h1>
-<pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x767B;&#x5F55;&#x8D26;&#x53F7;
- * <span class="hljs-doctag">@param</span> account    &#x90AE;&#x7BB1;&#x6216;&#x624B;&#x673A;&#x53F7;
- * <span class="hljs-doctag">@param</span> password   &#x5BC6;&#x7801;
- * <span class="hljs-doctag">@param</span> regionCode &#x533A;&#x57DF;&#x4EE3;&#x7801;
- * <span class="hljs-doctag">@param</span> callBack   &#x56DE;&#x8C03;&#x63A5;&#x53E3;
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String account, String password,String regionCode, ResultCallBack&lt;UserModel&gt; callBack)</span></span>;
-</code></pre>
-<h1 id="&#x7528;&#x6237;&#x6CE8;&#x518C;">&#x7528;&#x6237;&#x6CE8;&#x518C;</h1>
+                                <h2 id="&#x6CE8;&#x518C;&#x8D26;&#x53F7;">&#x6CE8;&#x518C;&#x8D26;&#x53F7;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x6CE8;&#x518C;&#x8D26;&#x53F7;
  * <span class="hljs-doctag">@param</span> account    &#x90AE;&#x7BB1;&#x6216;&#x624B;&#x673A;&#x53F7;
@@ -375,14 +404,24 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">register</span><span class="hljs-params">(String account, String password, String checkCode, String regionCode, ResultCallBack&lt;UserModel&gt; callBack)</span></span>;
 </code></pre>
-<h1 id="&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x9A8C;&#x8BC1;&#x7801;">&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x9A8C;&#x8BC1;&#x7801;</h1>
+<h2 id="&#x767B;&#x5F55;&#x8D26;&#x53F7;">&#x767B;&#x5F55;&#x8D26;&#x53F7;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x8D26;&#x53F7;-&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;&#x7801;
- * <span class="hljs-doctag">@param</span> callBack &#x56DE;&#x8C03;&#x63A5;&#x53E3;
+ * &#x767B;&#x5F55;&#x8D26;&#x53F7;
+ * <span class="hljs-doctag">@param</span> account    &#x90AE;&#x7BB1;&#x6216;&#x624B;&#x673A;&#x53F7;
+ * <span class="hljs-doctag">@param</span> password   &#x5BC6;&#x7801;
+ * <span class="hljs-doctag">@param</span> regionCode &#x533A;&#x57DF;&#x4EE3;&#x7801;
+ * <span class="hljs-doctag">@param</span> callBack   &#x56DE;&#x8C03;&#x63A5;&#x53E3;
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getEmailRegisterCheckCode</span><span class="hljs-params">(String account,ResultCallBack callBack)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String account, String password,String regionCode, ResultCallBack&lt;UserModel&gt; callBack)</span></span>;
 </code></pre>
-<h1 id="&#x91CD;&#x7F6E;&#x5BC6;&#x7801;">&#x91CD;&#x7F6E;&#x5BC6;&#x7801;</h1>
+<h2 id="&#x9000;&#x51FA;&#x767B;&#x5F55;">&#x9000;&#x51FA;&#x767B;&#x5F55;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x9000;&#x51FA;&#x767B;&#x5F55;
+ * <span class="hljs-doctag">@param</span> callBack   &#x56DE;&#x8C03;&#x63A5;&#x53E3;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">logout</span><span class="hljs-params">(ResultCallBack callBack)</span></span>;
+</code></pre>
+<h2 id="&#x91CD;&#x7F6E;&#x5BC6;&#x7801;">&#x91CD;&#x7F6E;&#x5BC6;&#x7801;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x91CD;&#x7F6E;&#x5BC6;&#x7801;
  * <span class="hljs-doctag">@param</span> account   &#x90AE;&#x7BB1;&#x6216;&#x624B;&#x673A;&#x53F7;
@@ -392,21 +431,17 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resetPassword</span><span class="hljs-params">(String account, String password, String checkCode,ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x83B7;&#x53D6;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;-&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;&#x7801;">&#x83B7;&#x53D6;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;-&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;&#x7801;</h1>
+<h2 id="&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;">&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x83B7;&#x53D6;&#x91CD;&#x7F6E;&#x5BC6;&#x7801;-&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;&#x7801;
- * <span class="hljs-doctag">@param</span> callBack &#x56DE;&#x8C03;&#x63A5;&#x53E3;
+ * &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;
+* <span class="hljs-doctag">@param</span> checkType CHECK_REGISTER &#x6CE8;&#x518C;&#x9A8C;&#x8BC1;&#x7801;
+*                  CHECK_FORGET   &#x5FD8;&#x8BB0;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x7801;
+*                  CHECK_LOGIN    &#x767B;&#x5F55;&#x9A8C;&#x8BC1;&#x7801;
+ * <span class="hljs-doctag">@param</span> callBack  &#x56DE;&#x8C03;&#x63A5;&#x53E3;
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getEmailForgetCheckCode</span><span class="hljs-params">(String account,ResultCallBack callBack)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getAccountCheckCode</span><span class="hljs-params">(String account, CheckType checkType, ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x9000;&#x51FA;&#x767B;&#x5F55;">&#x9000;&#x51FA;&#x767B;&#x5F55;</h1>
-<pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x9000;&#x51FA;&#x767B;&#x5F55;
- * <span class="hljs-doctag">@param</span> callBack   &#x56DE;&#x8C03;&#x63A5;&#x53E3;
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">logout</span><span class="hljs-params">(ResultCallBack callBack)</span></span>;
-</code></pre>
-<h1 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x540D;&#x79F0;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x540D;&#x79F0;</h1>
+<h2 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x540D;&#x79F0;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x540D;&#x79F0;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x66F4;&#x65B0;&#x7528;&#x6237;&#x540D;&#x79F0;
  * <span class="hljs-doctag">@param</span> name     &#x7528;&#x6237;&#x540D;&#x79F0;
@@ -414,7 +449,7 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateUserName</span><span class="hljs-params">(String name, ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;</h1>
+<h2 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x66F4;&#x65B0;&#x7528;&#x6237;&#x5934;&#x50CF;
  * <span class="hljs-doctag">@param</span> file     &#x5934;&#x50CF;&#x56FE;&#x7247;&#x6587;&#x4EF6;
@@ -422,7 +457,7 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateUserIcon</span><span class="hljs-params">(File file, ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5BC6;&#x7801;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5BC6;&#x7801;</h1>
+<h2 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5BC6;&#x7801;">&#x66F4;&#x65B0;&#x7528;&#x6237;&#x5BC6;&#x7801;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x66F4;&#x65B0;&#x7528;&#x6237;&#x5BC6;&#x7801;
  * <span class="hljs-doctag">@param</span> oldPassword &#x7528;&#x6237;&#x65E7;&#x5BC6;&#x7801;
@@ -430,23 +465,9 @@
  * <span class="hljs-doctag">@param</span> callBack    &#x56DE;&#x8C03;&#x7ED3;&#x679C;
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateUserPassword</span><span class="hljs-params">(String oldPassword,String password,ResultCallBack callBack)</span></span>;
+a
 </code></pre>
-<h1 id="&#x63D0;&#x4EA4;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;">&#x63D0;&#x4EA4;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;</h1>
-<pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x63D0;&#x4EA4;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;
- * <span class="hljs-doctag">@param</span> content    &#x53CD;&#x9988;&#x5185;&#x5BB9;
- * <span class="hljs-doctag">@param</span> contactWay &#x8054;&#x7CFB;&#x65B9;&#x5F0F;
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFeedback</span><span class="hljs-params">(String content,String contactWay,ResultCallBack callBack)</span></span>;
-</code></pre>
-<h1 id="&#x83B7;&#x53D6;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;">&#x83B7;&#x53D6;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;</h1>
-<pre><code class="lang-java"><span class="hljs-comment">/**
- * &#x83B7;&#x53D6;&#x7528;&#x6237;&#x610F;&#x89C1;&#x53CD;&#x9988;
- * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getFeedback</span><span class="hljs-params">(ResultCallBack&lt;List&lt;FeedbackBean&gt;&gt; callBack)</span></span>;
-</code></pre>
-<h1 id="usermodel&#x6570;&#x636E;&#x6A21;&#x578B;">UserModel&#x6570;&#x636E;&#x6A21;&#x578B;</h1>
+<h2 id="usermodel&#x6570;&#x636E;&#x6A21;&#x578B;">UserModel&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
 <table>
 <thead>
 <tr>
@@ -493,7 +514,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="feedbackbean&#x6570;&#x636E;&#x53CD;&#x9988;&#x6A21;&#x578B;">FeedbackBean&#x6570;&#x636E;&#x53CD;&#x9988;&#x6A21;&#x578B;</h1>
+<h2 id="feedbackbean&#x6570;&#x636E;&#x53CD;&#x9988;&#x6A21;&#x578B;">FeedbackBean&#x6570;&#x636E;&#x53CD;&#x9988;&#x6A21;&#x578B;</h2>
 <table>
 <thead>
 <tr>
@@ -562,7 +583,7 @@
                 </a>
                 
                 
-                <a href="2.1.html" class="navigation navigation-next " aria-label="Next page: 数据缓存">
+                <a href="2.1.html" class="navigation navigation-next " aria-label="Next page: 用户帮助">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -573,7 +594,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.用户管理","level":"1.3","depth":1,"next":{"title":"数据缓存","level":"1.3.1","depth":2,"path":"part2/2.1.md","ref":"part2/2.1.md","articles":[]},"previous":{"title":"1.集成SDK","level":"1.2","depth":1,"path":"part1/README.md","ref":"part1/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/README.md","mtime":"2019-08-16T08:23:01.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T08:36:13.014Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.用户管理","level":"1.3","depth":1,"next":{"title":"用户帮助","level":"1.3.1","depth":2,"path":"part2/2.1.md","ref":"part2/2.1.md","articles":[]},"previous":{"title":"1.集成SDK","level":"1.2","depth":1,"path":"part1/README.md","ref":"part1/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/README.md","mtime":"2019-09-27T09:20:52.266Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-08T10:30:44.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -581,10 +602,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

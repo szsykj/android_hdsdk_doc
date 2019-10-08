@@ -1,4 +1,18 @@
-#用户登录
+##注册账号
+
+ ```java
+/**
+ * 注册账号
+ * @param account    邮箱或手机号
+ * @param password   密码
+ * @param checkCode  验证码
+ * @param regionCode 区域代码
+ * @param callBack   回调接口
+ */
+void register(String account, String password, String checkCode, String regionCode, ResultCallBack<UserModel> callBack);
+```
+
+##登录账号
 
 ```java
 /**
@@ -11,31 +25,17 @@
 void login(String account, String password,String regionCode, ResultCallBack<UserModel> callBack);
 ```
 
-#用户注册
+##退出登录
 
 ```java
 /**
- * 注册账号
- * @param account    邮箱或手机号
- * @param password   密码
- * @param checkCode  验证码
- * @param regionCode 区域代码
+ * 退出登录
  * @param callBack   回调接口
  */
-void register(String account, String password, String checkCode, String regionCode, ResultCallBack<UserModel> callBack);
+void logout(ResultCallBack callBack);
 ```
 
-#获取注册验证码
-
-```java
-/**
- * 获取注册账号-邮箱验证码
- * @param callBack 回调接口
- */
-void getEmailRegisterCheckCode(String account,ResultCallBack callBack);
-```
-
-#重置密码
+##重置密码
 
 ```java
 /**
@@ -48,27 +48,20 @@ void getEmailRegisterCheckCode(String account,ResultCallBack callBack);
 void resetPassword(String account, String password, String checkCode,ResultCallBack callBack);
 ```
 
-#获取重置密码-邮箱验证码
+##获取验证码
 
 ```java
 /**
- * 获取重置密码-邮箱验证码
- * @param callBack 回调接口
+ * 获取验证码
+* @param checkType CHECK_REGISTER 注册验证码
+*                  CHECK_FORGET   忘记密码验证码
+*                  CHECK_LOGIN    登录验证码
+ * @param callBack  回调接口
  */
-void getEmailForgetCheckCode(String account,ResultCallBack callBack);
+void getAccountCheckCode(String account, CheckType checkType, ResultCallBack callBack);
 ```
 
-#退出登录
-
-```java
-/**
- * 退出登录
- * @param callBack   回调接口
- */
-void logout(ResultCallBack callBack);
-```
-
-#更新用户名称
+##更新用户名称
 
 ```java
 /**
@@ -79,7 +72,7 @@ void logout(ResultCallBack callBack);
 void updateUserName(String name, ResultCallBack callBack);
 ```
 
-#更新用户头像
+##更新用户头像
 
 ```java
 /**
@@ -90,7 +83,7 @@ void updateUserName(String name, ResultCallBack callBack);
 void updateUserIcon(File file, ResultCallBack callBack);
 ```
 
-#更新用户密码
+##更新用户密码
 
 ```java
 /**
@@ -100,30 +93,9 @@ void updateUserIcon(File file, ResultCallBack callBack);
  * @param callBack    回调结果
  */
 void updateUserPassword(String oldPassword,String password,ResultCallBack callBack);
-```
+a```
 
-#提交用户意见反馈
-
-```java
-/**
- * 提交用户意见反馈
- * @param content    反馈内容
- * @param contactWay 联系方式
- */
-void setFeedback(String content,String contactWay,ResultCallBack callBack);
-```
-
-#获取用户意见反馈
-
-```java
-/**
- * 获取用户意见反馈
- * @param callBack 结果回调
- */
-void getFeedback(ResultCallBack<List<FeedbackBean>> callBack);
-```
-
-#UserModel数据模型
+##UserModel数据模型
 | 字段名称          | 类型  | 字段说明   |
 |---------------|-----|--------|
 | userId        | 数字  | 用户id   |
@@ -134,7 +106,7 @@ void getFeedback(ResultCallBack<List<FeedbackBean>> callBack);
 | phone         | 字符串 | 手机号码   |
 | hasCreateHome | 数字  | 是否创建家庭 |
 
-#FeedbackBean数据反馈模型
+##FeedbackBean数据反馈模型
 | 字段名称            | 类型  | 字段说明                   |
 |-----------------|-----|------------------------|
 | feedbacId       | 数字  | 反馈ID                   |

@@ -1,8 +1,8 @@
-#创建家庭
+##添加家庭
 
 ```java
 /**
- * 创建家庭
+ * 添加家庭
  * @param name     家庭名称
  * @param location 家庭地址
  * @param roomList 房间信息
@@ -11,21 +11,21 @@
 void createHome(String name, String location, List<RoomModel> roomList, ResultCallBack callBack);
 ```
 
-#得到用户家庭数据
+##获取用户家庭数据
 
 ```java
 /**
- * 得到用户家庭数据
+ * 获取用户家庭数据
  * @param callBack 结果回调
  */
 void getHomeList(ResultCallBack<List<HomeModel>> callBack);
 ```
 
-#更新家庭信息
+##修改家庭信息
 
 ```java
 /**
- * 更新家庭信息
+ * 修改家庭信息
  * @param hid      家庭信息
  * @param name     家庭名称
  * @param location 家庭地址
@@ -34,7 +34,42 @@ void getHomeList(ResultCallBack<List<HomeModel>> callBack);
 void updateHomeInfo(int hid,String name,String location,ResultCallBack callBack);
 ```
 
-#设置家庭状态改变监听
+##得到家庭详细信息
+
+```java
+/**
+ * 得到家庭详细信息
+ * @param hid       家庭id
+ * @param callBack  结果回调
+ */
+void getHomeDetails(int hid,ResultCallBack<HomeInfo> callBack);
+```
+
+
+##删除家庭
+
+```java
+/**
+ * 删除家庭
+ * @param hid       家庭id
+ * @param callBack  结果回调
+ */
+void deleteHome(int hid,ResultCallBack callBack);
+```
+
+##切换家庭
+
+```java
+/**
+ * 切换家庭
+ * @param hid       家庭id
+ * @param callBack  结果回调
+ */
+void switchHome(int hid,ResultCallBack callBack);
+```
+
+
+##设置家庭状态改变监听
 
 ```java
 /**
@@ -44,7 +79,7 @@ void updateHomeInfo(int hid,String name,String location,ResultCallBack callBack)
 void registerHomeStatusListener(OnHomeStatusListener listener);
 ```
 
-#取消家庭状态改变监听
+##取消家庭状态改变监听
 
 ```java
 /**
@@ -54,7 +89,7 @@ void registerHomeStatusListener(OnHomeStatusListener listener);
 void unRegisterHomeStatusListener(OnHomeStatusListener listener);
 ```
 
-#家庭状态改变回调类 OnHomeStatusListener
+##家庭状态改变回调类 OnHomeStatusListener
 
 ```java
 /**
@@ -89,7 +124,7 @@ void onHomeInfoChanged(int hid);
 void onHomeCurrentChanged(int hid);
 ```
 
-#HomeModel数据模型
+##HomeModel数据模型
 | 字段名称         | 类型  | 字段说明                   |
 |--------------|-----|------------------------|
 | userId       | 数字  | 用户id                   |

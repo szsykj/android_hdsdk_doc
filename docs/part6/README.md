@@ -1,6 +1,4 @@
-#设备控制
-
-
+##设备控制
 
 ```java
 /**
@@ -11,7 +9,7 @@
 void control(CmdParameter parameter, ResultCallBack callBack);
 ```
 
-#查询设备状态
+##查询设备状态
 
 ```java
 /**
@@ -22,7 +20,85 @@ void control(CmdParameter parameter, ResultCallBack callBack);
 void getStatus(int did,ResultCallBack<LinkedHashMap<String,String>> callBack);
 ```
 
-#更新设备信息
+##获取设备mcu版本号
+
+```java
+/**
+ * 获取设备mcu版本号
+ * @param did      设备id
+ * @param callBack 结果回调
+ */
+void getMcuVersion(int did, ResultCallBack<String> callBack);
+```
+
+
+##获取设备升级信息
+
+```java
+/**
+ * 获取设备升级信息
+ * @param did      设备id
+ * @param callBack 结果回调
+ */
+void getDeviceUpgradeInfo(int did,ResultCallBack<UpdateInfoBean> callBack);
+```
+
+##获取设备开关信息
+
+```java
+/**
+ * 获取设备开关信息(目前只支持护眼台灯)
+ * @param did      设备id
+ * @param callBack 结果回调
+ */
+void getDeviceSwitchData(int did,ResultCallBack<LampUseModel> callBack);
+```
+
+##获取设备日志
+
+```java
+/**
+ * 获取设备日志
+ * @param did      设备id
+ * @param pageNum  页数
+ * @param callBack 结果回调
+ */
+void getDeviceLog(int did,int pageNum, final ResultCallBack<LogInfo> callBack);
+```
+
+##获取设备下的蓝牙设备数据
+
+```java
+/**
+ * 获取设备下的蓝牙设备数据
+ * @param did      设备id
+ * @param callBack 结果回调
+ */
+void getBluetoothDeviceList(final int did,final ResultCallBack<BleDeviceResult> callBack);
+```
+
+##更新常用设备
+
+```java
+/**
+ * 更新常用设备 (用于设置单个设备是否常用)
+ * @param did      设备id
+ * @param isCommon 是否常用设备
+ * @param callBack 结果回调
+ */
+void updateCommonDevice(int did, boolean isCommon, ResultCallBack callBack);
+```
+
+```java
+/**
+ * 更新常用设备 (用于设置多个设备为常用)
+ * @param dids     设备id集合
+ * @param callBack 结果回调
+ */
+void updateCommonDeviceList(int[] dids, ResultCallBack callBack);
+```
+
+##更新设备信息
 
 ```java
 /**
@@ -35,41 +111,7 @@ void getStatus(int did,ResultCallBack<LinkedHashMap<String,String>> callBack);
 void updateDeviceInfo(int did, String name, String icon, ResultCallBack callBack);
 ```
 
-#更新常用设备
-
-```java
-/**
- * 更新常用设备 (用于设置单个设备是否常用)
- * @param did      设备id
- * @param isCommon 是否常用设备
- * @param callBack 结果回调
- */
-void updateCommonDevice(int did, boolean isCommon, ResultCallBack callBack);
-```
-
-#获取设备mcu版本号
-
-```java
-/**
- * 获取设备mcu版本号
- * @param did      设备id
- * @param callBack 结果回调
- */
-void getMcuVersion(int did, ResultCallBack<String> callBack);
-```
-
-#获取设备升级信息
-
-```java
-/**
- * 获取设备升级信息
- * @param did      设备id
- * @param callBack 结果回调
- */
-void getDeviceUpgradeInfo(int did,ResultCallBack<UpdateInfoBean> callBack);
-```
-
-#设备升级
+##设备升级
 
 ```java
 /**
@@ -79,7 +121,7 @@ void getDeviceUpgradeInfo(int did,ResultCallBack<UpdateInfoBean> callBack);
 void deviceOTA(int did, ResultCallBack callBack);
 ```
 
-#设备删除
+##设备删除
 
 ```java
 /**
@@ -90,17 +132,29 @@ void deviceOTA(int did, ResultCallBack callBack);
 void deleteDevice(int did ,ResultCallBack callBack);
 ```
 
-#设置设备状态改变监听
+##设备删除
 
 ```java
 /**
- * 设置设备状态改变监听
- * @param listener 设备状态改变监听
+ * 设备删除
+ * @param did      设备id
+ * @param callBack 结果回调
  */
-void registerDeviceStatusListener(OnDeviceStatusListener listener);
+void deleteDevice(int did ,ResultCallBack callBack);
 ```
 
-#取消设备状态改变监听
+##设置设备状态改变监听
+
+```java
+/**
+ * 批量删除设备
+ * @param dids
+ * @param callBack
+ */
+void deleteDeviceList(List<Integer> dids, final ResultCallBack callBack);
+```
+
+##取消设备状态改变监听
 
 ```java
 /**
@@ -110,7 +164,7 @@ void registerDeviceStatusListener(OnDeviceStatusListener listener);
 void unRegisterDeviceStatusListener(OnDeviceStatusListener listener);
 ```
 
-#设备状态改变回调类 OnDeviceStatusListener
+##设备状态改变回调类 OnDeviceStatusListener
 
 ```java
 /**
@@ -162,7 +216,7 @@ void onDeviceUpdateSuccess(int did);
 void onDeviceUpdateFail(int did);
 ```
 
-#DeviceModel数据模型
+##DeviceModel数据模型
 | 字段名称            | 类型   | 字段说明                    |
 |-----------------|------|-------------------------|
 | userId          | 数字   | 用户id                    |

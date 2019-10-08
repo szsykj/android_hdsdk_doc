@@ -134,6 +134,19 @@
                 <a href="../part2/2.1.html">
             
                     
+                    用户帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../part2/2.1.html">
+            
+                <a href="../part2/2.1.html">
+            
+                    
                     数据缓存
             
                 </a>
@@ -180,6 +193,19 @@
             
                     
                     WIFI设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/3.3.html">
+            
+                <a href="../part3/3.3.html">
+            
+                    
+                    网关设备配网
             
                 </a>
             
@@ -283,12 +309,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../part11/">
+        <li class="chapter " data-level="1.12" data-path="../part12/sigmesh.html">
             
-                <a href="../part11/">
+                <a href="../part12/sigmesh.html">
             
                     
-                    11.错误码
+                    11.sigmesh
             
                 </a>
             
@@ -296,12 +322,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="../part12/">
+        <li class="chapter " data-level="1.13" data-path="../part11/">
+            
+                <a href="../part11/">
+            
+                    
+                    12.错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../part12/">
             
                 <a href="../part12/">
             
                     
-                    12.更新日志
+                    13.更新日志
             
                 </a>
             
@@ -354,7 +393,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x83B7;&#x53D6;&#x4EA7;&#x54C1;&#x5217;&#x8868;">&#x83B7;&#x53D6;&#x4EA7;&#x54C1;&#x5217;&#x8868;</h1>
+                                <h2 id="&#x6DFB;&#x52A0;&#x667A;&#x80FD;">&#x6DFB;&#x52A0;&#x667A;&#x80FD;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x6DFB;&#x52A0;&#x667A;&#x80FD;
  * <span class="hljs-doctag">@param</span> model    &#x667A;&#x80FD;&#x6A21;&#x578B;
@@ -362,7 +401,7 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addWisdom</span><span class="hljs-params">(WisdomModel model, ResultCallBack&lt;WisdomModel&gt; callBack)</span></span>;
 </code></pre>
-<h1 id="&#x5220;&#x9664;&#x667A;&#x80FD;">&#x5220;&#x9664;&#x667A;&#x80FD;</h1>
+<h2 id="&#x5220;&#x9664;&#x667A;&#x80FD;">&#x5220;&#x9664;&#x667A;&#x80FD;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x5220;&#x9664;&#x667A;&#x80FD;
  * <span class="hljs-doctag">@param</span> wid      &#x667A;&#x80FD;id
@@ -370,14 +409,14 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteWisdom</span><span class="hljs-params">(<span class="hljs-keyword">int</span> wid, ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x83B7;&#x53D6;&#x667A;&#x80FD;&#x6570;&#x636E;&#x96C6;&#x5408;">&#x83B7;&#x53D6;&#x667A;&#x80FD;&#x6570;&#x636E;&#x96C6;&#x5408;</h1>
+<h2 id="&#x83B7;&#x53D6;&#x667A;&#x80FD;&#x6570;&#x636E;&#x96C6;&#x5408;">&#x83B7;&#x53D6;&#x667A;&#x80FD;&#x6570;&#x636E;&#x96C6;&#x5408;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x83B7;&#x53D6;&#x667A;&#x80FD;&#x6570;&#x636E;&#x96C6;&#x5408;
  * <span class="hljs-doctag">@param</span> callBack &#x56DE;&#x8C03;&#x7ED3;&#x679C;
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getWisdomList</span><span class="hljs-params">(ResultCallBack&lt;List&lt;WisdomModel&gt;&gt; callBack)</span></span>;
 </code></pre>
-<h1 id="&#x5F00;&#x5173;&#x667A;&#x80FD;">&#x5F00;&#x5173;&#x667A;&#x80FD;</h1>
+<h2 id="&#x5F00;&#x5173;&#x667A;&#x80FD;">&#x5F00;&#x5173;&#x667A;&#x80FD;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x5F00;&#x5173;&#x667A;&#x80FD;
  * <span class="hljs-doctag">@param</span> wid      &#x667A;&#x80FD;id
@@ -386,7 +425,7 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">switchWisdom</span><span class="hljs-params">(<span class="hljs-keyword">int</span> wid,<span class="hljs-keyword">boolean</span> onoff,ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x4FEE;&#x6539;&#x667A;&#x80FD;">&#x4FEE;&#x6539;&#x667A;&#x80FD;</h1>
+<h2 id="&#x4FEE;&#x6539;&#x667A;&#x80FD;">&#x4FEE;&#x6539;&#x667A;&#x80FD;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x4FEE;&#x6539;&#x667A;&#x80FD;
  * <span class="hljs-doctag">@param</span> model    &#x667A;&#x80FD;&#x6570;&#x636E;
@@ -394,28 +433,28 @@
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateWisdom</span><span class="hljs-params">(WisdomModel model, ResultCallBack callBack)</span></span>;
 </code></pre>
-<h1 id="&#x624B;&#x52A8;&#x6267;&#x884C;&#x667A;&#x80FD;">&#x624B;&#x52A8;&#x6267;&#x884C;&#x667A;&#x80FD;</h1>
+<h2 id="&#x624B;&#x52A8;&#x6267;&#x884C;&#x667A;&#x80FD;">&#x624B;&#x52A8;&#x6267;&#x884C;&#x667A;&#x80FD;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x624B;&#x52A8;&#x6267;&#x884C;&#x667A;&#x80FD;
  * <span class="hljs-doctag">@param</span> wid &#x667A;&#x80FD;id
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">executeWisdom</span><span class="hljs-params">(<span class="hljs-keyword">int</span> wid)</span></span>;
 </code></pre>
-<h1 id="&#x8BBE;&#x7F6E;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x8BBE;&#x7F6E;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h1>
+<h2 id="&#x8BBE;&#x7F6E;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x8BBE;&#x7F6E;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x8BBE;&#x7F6E;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
  * <span class="hljs-doctag">@param</span> listener &#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">registerWisdomStatusListener</span><span class="hljs-params">(OnWisdomStatusListener listener)</span></span>;
 </code></pre>
-<h1 id="&#x53D6;&#x6D88;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x53D6;&#x6D88;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h1>
+<h2 id="&#x53D6;&#x6D88;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x53D6;&#x6D88;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
  * &#x53D6;&#x6D88;&#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
  * <span class="hljs-doctag">@param</span> listener &#x667A;&#x80FD;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">unRegisterWisdomStatusListener</span><span class="hljs-params">(OnWisdomStatusListener listener)</span></span>;
 </code></pre>
-<h1 id="wisdommodel&#x6570;&#x636E;&#x6A21;&#x578B;">WisdomModel&#x6570;&#x636E;&#x6A21;&#x578B;</h1>
+<h2 id="wisdommodel&#x6570;&#x636E;&#x6A21;&#x578B;">WisdomModel&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
 <table>
 <thead>
 <tr>
@@ -615,7 +654,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.智能","level":"1.10","depth":1,"next":{"title":"10.设备分享","level":"1.11","depth":1,"path":"part10/README.md","ref":"part10/README.md","articles":[]},"previous":{"title":"8.倒计时","level":"1.9","depth":1,"path":"part8/README.md","ref":"part8/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part9/README.md","mtime":"2019-08-16T08:27:13.028Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-16T08:36:13.014Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.智能","level":"1.10","depth":1,"next":{"title":"10.设备分享","level":"1.11","depth":1,"path":"part10/README.md","ref":"part10/README.md","articles":[]},"previous":{"title":"8.倒计时","level":"1.9","depth":1,"path":"part8/README.md","ref":"part8/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part9/README.md","mtime":"2019-09-27T09:23:37.964Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-08T10:30:44.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -623,10 +662,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -1,5 +1,6 @@
+#倒计时模块
 
-#获取当前设备倒计时，查询设备获取，可能为null
+##获取当前设备倒计时，查询设备获取，null代表当前设备无倒计时
 
 ```java
 /**
@@ -11,22 +12,22 @@
 void getCountDownByDeviceId(int did, ResultCallBack<CountDownModel> resultCallBack);
 ```
 
-#设置倒计时
+##设置倒计时
 ```java
 /**
 * @param did              设备的id
 * @param minute           要设置的倒计时长，单位为分钟
 * @param actions          要设置动作集合 {"onoff":1}
-* @param resultCallBack   回调
+* @param resultCallBack   回调   
 */
 void setCountDown(int did, final int minute, LinkedHashMap<String, String> actions, ResultCallBack<CountDownModel> resultCallBack);
 ```
 
-#停止倒计时
+##停止倒计时
 ```java
 /**
 * 停止timer
-*
+* 
 * @param did
 * @param resultCallBack
 */
@@ -34,7 +35,7 @@ void stopCountDown(int did, ResultCallBack resultCallBack);
 ```
 
 
-#CountDownModel 数据模型
+##CountDownModel 数据模型
 
 | 字段名称       | 字段说明    | 类型  | 备注 |
 |------------|---------|-----|------------------------------------------------------------------------------------------|
@@ -43,4 +44,13 @@ void stopCountDown(int did, ResultCallBack resultCallBack);
 | targetTime | 目标执行时间     | long | 动作执行的时间戳 | 
 | target     | 执行动作       | 字符串 | {"onoff":"1"}|
 
+
+##设备端可能返回的错误码
+
+| 错误码  | 说明              |
+|----------------------|--------------
+| 0                   | 通用错误               |
+| 22131                    | 智能-倒计时CD已存在    |
+| 22132                    | 智能-倒计时不存在      |
+| 22133                    | 智能-倒计时不需要更新   |
 
