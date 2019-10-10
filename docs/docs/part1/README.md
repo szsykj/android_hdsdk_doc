@@ -1,12 +1,12 @@
-#集成SDK
+##集成SDK
 本章介绍如何集成SDK,请使用Android studio编辑器来开发
 
 
-#创建工程
+##创建工程
 在Android Studio中建立你的工程，并在libs文件夹中添加SykjSmartSdk_v1.0.0.aar文件。
 
 
-# build.gradle 配置
+## build.gradle 配置
 build.gradle 文件里添加集成准备中下载的dependencies 依赖库。  
 ```java
 implementation (name:'SykjSmartSdk_v1.0.0, ext:'aar')
@@ -20,12 +20,11 @@ implementation 'org.greenrobot:eventbus:3.1.1'
 implementation 'com.google.code.gson:gson:2.8.3'
 implementation 'org.litepal.android:java:3.0.0'
 implementation 'com.aliyun.dpa:oss-android-sdk:+'
-
-implementation 'com.jakewharton:butterknife:8.8.1'
-annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+implementation 'org.bouncycastle:bcpkix-jdk15on:1.59'
+implementation 'com.github.szsykj:android_sigmesh:v1.0.1'
 ```
 
-# AndroidManifest.xml 配置
+## AndroidManifest.xml 配置
 在Androidmanifest中添加以下权限及服务
 ```java
 <uses-permission android:name="android.permission.INTERNET" />
@@ -39,8 +38,10 @@ annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 <uses-permission android:name="android.permission.FLASHLIGHT" />
 
 <service android:name="org.eclipse.paho.android.service.MqttService" />
+<service android:name="com.telink.sig.mesh.light.MeshService" />
+
 ```
-#SDK初始化
+##SDK初始化
 
 在application中初始化sdk后，使用sdk中对外提供的接口(具体接口使用参考demo实例)
 

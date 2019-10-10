@@ -134,6 +134,19 @@
                 <a href="../part2/2.1.html">
             
                     
+                    用户帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../part2/2.1.html">
+            
+                <a href="../part2/2.1.html">
+            
+                    
                     数据缓存
             
                 </a>
@@ -180,6 +193,19 @@
             
                     
                     WIFI设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/3.3.html">
+            
+                <a href="../part3/3.3.html">
+            
+                    
+                    网关设备配网
             
                 </a>
             
@@ -283,12 +309,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../part11/">
+        <li class="chapter " data-level="1.12" data-path="../part12/sigmesh.html">
             
-                <a href="../part11/">
+                <a href="../part12/sigmesh.html">
             
                     
-                    11.错误码
+                    11.sigmesh
             
                 </a>
             
@@ -296,12 +322,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="../part12/">
+        <li class="chapter " data-level="1.13" data-path="../part11/">
+            
+                <a href="../part11/">
+            
+                    
+                    12.错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../part12/">
             
                 <a href="../part12/">
             
                     
-                    12.更新日志
+                    13.更新日志
             
                 </a>
             
@@ -354,7 +393,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h1>
+                                <h1 id="&#x8BBE;&#x5907;&#x5B9A;&#x65F6;&#x6A21;&#x5757;">&#x8BBE;&#x5907;&#x5B9A;&#x65F6;&#x6A21;&#x5757;</h1>
+<h2 id="&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;
 *
@@ -363,7 +403,7 @@
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getDeviceTimingList</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deviceId, ResultCallBack&lt;ArrayList&lt;Timing&gt;&gt; resultCallBack)</span></span>;
 </code></pre>
-<h1 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;</h1>
+<h2 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x6DFB;&#x52A0;&#x5B9A;&#x65F6;
 *
@@ -381,7 +421,7 @@
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addTiming</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deviceId, String name, String repeat, String time, LinkedHashMap&lt;String, String&gt; actions, ResultCallBack resultCallBack)</span></span>;
 </code></pre>
-<h1 id="&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h1>
+<h2 id="&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x66F4;&#x65B0;&#x5B9A;&#x65F6;
 *
@@ -400,7 +440,7 @@
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateTiming</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deviceId, <span class="hljs-keyword">int</span> timingId, String name, String repeat, String time, LinkedHashMap&lt;String, String&gt; actions, ResultCallBack resultCallBack)</span></span>;
 </code></pre>
-<h1 id="&#x5220;&#x9664;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x5220;&#x9664;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h1>
+<h2 id="&#x5220;&#x9664;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;">&#x5220;&#x9664;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x5220;&#x9664;&#x5B9A;&#x65F6;
 *
@@ -409,7 +449,7 @@
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteTiming</span><span class="hljs-params">(<span class="hljs-keyword">int</span> timingId, ResultCallBack resultCallBack)</span></span>;
 </code></pre>
-<h1 id="&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x5F00;&#x542F;&#x548C;&#x5173;&#x95ED;&#x72B6;&#x6001;">&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x5F00;&#x542F;&#x548C;&#x5173;&#x95ED;&#x72B6;&#x6001;</h1>
+<h2 id="&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x5F00;&#x542F;&#x548C;&#x5173;&#x95ED;&#x72B6;&#x6001;">&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x7684;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x5F00;&#x542F;&#x548C;&#x5173;&#x95ED;&#x72B6;&#x6001;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x4FEE;&#x6539;&#x5B9A;&#x65F6;&#x7684;&#x5F00;&#x542F;&#x5173;&#x95ED;&#x72B6;&#x6001;
 *
@@ -419,21 +459,21 @@
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateTimingStatus</span><span class="hljs-params">(<span class="hljs-keyword">int</span> timingId, <span class="hljs-keyword">int</span> status, ResultCallBack resultCallBack)</span></span>;
 </code></pre>
-<h1 id="&#x76D1;&#x542C;&#x6240;&#x6709;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x53D8;&#x5316;&#x65F6;&#x7684;&#x56DE;&#x8C03;">&#x76D1;&#x542C;&#x6240;&#x6709;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x53D8;&#x5316;&#x65F6;&#x7684;&#x56DE;&#x8C03;</h1>
+<h2 id="&#x76D1;&#x542C;&#x6240;&#x6709;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x53D8;&#x5316;&#x65F6;&#x7684;&#x56DE;&#x8C03;">&#x76D1;&#x542C;&#x6240;&#x6709;&#x8BBE;&#x5907;&#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x53D8;&#x5316;&#x65F6;&#x7684;&#x56DE;&#x8C03;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * &#x76D1;&#x542C;&#x5B9A;&#x65F6;&#x53D8;&#x5316;
 * <span class="hljs-doctag">@param</span> onTimingChangedListener
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addTimingChangeListener</span><span class="hljs-params">(OnTimingChangedListener onTimingChangedListener)</span></span>;
 </code></pre>
-<h1 id="ontimingchangedlistener-&#x5B9A;&#x65F6;&#x53D8;&#x5316;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#x7C7B;">OnTimingChangedListener &#x5B9A;&#x65F6;&#x53D8;&#x5316;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#x7C7B;</h1>
+<h2 id="ontimingchangedlistener-&#x5B9A;&#x65F6;&#x53D8;&#x5316;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#x7C7B;">OnTimingChangedListener &#x5B9A;&#x65F6;&#x53D8;&#x5316;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#x7C7B;</h2>
 <pre><code class="lang-java"><span class="hljs-comment">/**
 * <span class="hljs-doctag">@param</span> did     &#x5B9A;&#x65F6;&#x53D1;&#x751F;&#x53D8;&#x66F4;&#x7684;&#x8BBE;&#x5907;id
 * <span class="hljs-doctag">@param</span> timings &#x53D1;&#x751F;&#x53D8;&#x66F4;&#x540E;&#x7684;&#x5B9A;&#x65F6;
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onTimingChanged</span><span class="hljs-params">(<span class="hljs-keyword">int</span> did, List&lt;Timing&gt; timings)</span></span>;
 </code></pre>
-<h1 id="timing&#x6570;&#x636E;&#x6A21;&#x578B;&#x7C7B;">Timing&#x6570;&#x636E;&#x6A21;&#x578B;&#x7C7B;</h1>
+<h1 id="timing&#x6570;&#x636E;&#x6A21;&#x578B;">Timing&#x6570;&#x636E;&#x6A21;&#x578B;</h1>
 <table>
 <thead>
 <tr>
@@ -496,7 +536,7 @@
 <td>dtStatus</td>
 <td>&#x4EFB;&#x52A1;&#x7684;&#x72B6;&#x6001;</td>
 <td>&#x6570;&#x5B57;</td>
-<td>&#x72B6;&#x6001;,L(1~2) 1&#xFF1A;&#x6253;&#x5F00;&#xFF0C; 0&#xFF1A;&#x5173;&#x95ED;</td>
+<td>&#x72B6;&#x6001; 1&#xFF1A;&#x6253;&#x5F00;&#xFF0C; 0&#xFF1A;&#x5173;&#x95ED;</td>
 </tr>
 </tbody>
 </table>
@@ -543,7 +583,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.设备定时","level":"1.8","depth":1,"next":{"title":"8.倒计时","level":"1.9","depth":1,"path":"part8/README.md","ref":"part8/README.md","articles":[]},"previous":{"title":"6.设备控制","level":"1.7","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part7/README.md","mtime":"2019-08-08T06:21:33.287Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-12T08:08:10.575Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.设备定时","level":"1.8","depth":1,"next":{"title":"8.倒计时","level":"1.9","depth":1,"path":"part8/README.md","ref":"part8/README.md","articles":[]},"previous":{"title":"6.设备控制","level":"1.7","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part7/README.md","mtime":"2019-09-27T09:19:54.699Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-08T10:30:44.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -551,10 +591,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

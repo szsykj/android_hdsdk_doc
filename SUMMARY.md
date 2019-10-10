@@ -2,7 +2,7 @@
 
 * [1.集成SDK](part1/README.md)
 * [2.用户管理](part2/README.md)
-    * [用户帮助](part2/2.1.md)
+    * [用户帮助](part2/2.2.md)
     * [数据缓存](part2/2.1.md)
 * [3.设备配网]()
     * [产品列表](part3/3.1.md)
